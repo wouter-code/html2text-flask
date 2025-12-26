@@ -4,7 +4,7 @@ import html2text
 
 app = Flask(__name__)
 
-@app.route('/convert', methods=['POST'])
+@app.route('/html2text', methods=['POST'])
 def convert_html():
     try:
         data = request.get_json()
